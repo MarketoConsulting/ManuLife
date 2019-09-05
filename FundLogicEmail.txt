@@ -1,0 +1,19 @@
+<table align="center" cellpadding="0" cellspacing="0" class="responsive-tbl">
+              <tbody>
+                #foreach($record in ${fundsInterest_cList})
+                   #if (${record.visible} == 1)
+                      <tr>
+                        <td width="5%"><img src="http://www.manulifeam.com/uploadedImages/Email_Campaigns/2017_Apr_FundFlash_Image_PDF.png" /></td>
+                        <td style="text-align:left;" width="95%">
+                        	<p style="margin-left:10px;"><a download="${record.fundName}" href="${record.fundURL}">${record.fundName}</a></p>
+                        </td>
+                    </tr>
+                   #end
+                 #end
+              </tbody>
+</table>
+
+
+
+
+
